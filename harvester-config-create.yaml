@@ -15,9 +15,9 @@ install:
       - name: ens18
     default_route: true
     method: dhcp
-    bond_options:
-      mode: balance-tlb
-      miimon: 100
+      #    bond_options:
+      #mode: balance-tlb
+      #miimon: 100
   device: /dev/sda # The target disk to install
 #  data_disk: /dev/sdb # It is recommended to use a separate disk to store VM data
   iso_url: https://releases.rancher.com/harvester/v1.1.3/harvester-v1.1.3-amd64.iso
