@@ -12,7 +12,7 @@ install:
   mode: create
   management_interface: # available as of v1.1.0
     interfaces:
-      - name: eth0
+      - name: enp6s18
     default_route: true
     method: dhcp
     bond_options:
