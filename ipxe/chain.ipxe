@@ -1,0 +1,3 @@
+#!ipxe
+dhcp
+chain https://raw.githubusercontent.com/belgaied2/harvester-configs/refs/heads/main/equinix/ipxe-1.4.2
