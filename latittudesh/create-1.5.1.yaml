@@ -1,0 +1,22 @@
+scheme_version: 1
+token: harvestertoken
+os:
+  hostname: harvester-1
+  ssh_authorized_keys:
+    - github:belgaied2
+  password: harvester     # Replace with your password
+  dns_nameservers:
+  - 1.1.1.1
+  - 8.8.8.8
+install:
+  mode: create
+  management_interface: # available as of v1.1.0
+    interfaces:
+      - name: enp1s0f0
+        hwAddr: "3c:ec:ef:95:23:60"
+    default_route: true
+    method: dhcp
+  device: /dev/nvme0n1 # The target disk to install
+#  data_disk: /dev/sdb # It is recommended to use a separate disk to store VM data
+  iso_url: http://releases.rancher.com/harvester/v1.5.1/harvester-v1.5.1-amd64.iso
+  tty: tty1
